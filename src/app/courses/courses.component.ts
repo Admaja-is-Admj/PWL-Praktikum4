@@ -11,8 +11,8 @@ export class CoursesComponent implements OnInit {
   binding = 'property-binding';
   imageUrl = 'http://lorempixel.com/400/200';
   colSpan = 2;
-  isActive = false;
-  onSave(){
+  isActive = true;
+  onSave($event){
     console.log('button sudah diklik')
   }
   // title = 'Angular';
