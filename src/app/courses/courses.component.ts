@@ -13,7 +13,14 @@ export class CoursesComponent implements OnInit {
   colSpan = 2;
   isActive = true;
   onSave($event){
+    $event.stopPropagation();
     console.log('button sudah diklik')
+  }
+  onDivClick($event){
+    console.log("ini method div",$event)
+  }
+  onKeyUp(){
+    console.log("enter was pressed");
   }
   // title = 'Angular';
   // point = '3 Author';
