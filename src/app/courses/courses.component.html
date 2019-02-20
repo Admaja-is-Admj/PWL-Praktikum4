@@ -22,4 +22,6 @@
 <div (click)="onDivClick($event)">
   <button type="button" class="btn btn-danger" (click)="onSave($event)">button</button>
 </div>
-<input type="text" (keyup.enter)="onKeyUp()">
+<br><br>
+<!-- <input type="text" [value]='nama' (keyup.enter)="nama = $event.target.value;onKeyUp()"> -->
+<input type="text" [(ngModel)]="nama" (keyup.enter)="onKeyUp()">

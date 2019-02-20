@@ -11,7 +11,8 @@ export class CoursesComponent implements OnInit {
   binding = 'property-binding';
   imageUrl = 'http://lorempixel.com/400/200';
   colSpan = 2;
-  isActive = true;
+  isActive = false;
+  nama = 'Roberto';
   onSave($event){
     $event.stopPropagation();
     console.log('button sudah diklik')
